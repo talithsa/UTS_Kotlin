@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuhuFragment"
+    android:orientation="vertical"
+    android:background="@drawable/home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KONVERSI SUHU"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_prim"
+        android:layout_margin="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukan Nilai"
+        android:textAlignment="center"
+        android:textColor="@color/pink_prim"
+        android:layout_marginTop="50dp"
+        android:id="@+id/header1"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/edt_shape"
+        android:hint="Masukan Nilai"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:id="@+id/inputSuhu"/>
+    <Spinner
+        android:id="@+id/myspinner"
+        android:layout_marginTop="30dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:entries="@array/suhu"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_calculate"
+        android:text="Convert"
+        android:backgroundTint="@color/pink_prim"
+        android:layout_gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_margin="30dp"
+        android:textColor="@color/secondary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hasil"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/pink_prim"
+            android:id="@+id/header2"/>
+
+        <TextView
+            android:id="@+id/tv_hasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:textColor="@color/pink_prim"
+            android:text="0" />
+
+    </LinearLayout>
+
+</LinearLayout>

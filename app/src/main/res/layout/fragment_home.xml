@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@drawable/home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_logout"
+        android:text="Log Out"
+        android:textColor="@color/pink_prim"
+        android:backgroundTint="@color/secondary"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_prim"
+        android:textAlignment="center"
+        android:text="Did you know? the cities is me. Depok, where I grew up until I was 19 y.o. Malang - East Java, a place I visit once every 2 years, aka my hometown. But now, Bandung is my home to live and study. I like those cities, apart from because they are nice, the vibing." />
+
+</FrameLayout>
